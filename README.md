@@ -1,6 +1,7 @@
 # rafaparada-api-rest-nodejs
 
 CLONAR EL PROYECTO A TU LOCAL
+situate en el directorio donde quieres crear el proyecto y ejecuta lo siguiente en la git bash
 
 git clone https://github.com/rafaparada/rafaparada-api-rest-nodejs.git
 
