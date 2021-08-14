@@ -7,7 +7,11 @@ app.use(express.json());
 const PORT = process.env.PORT || 8000;
 app.use(cors());
 
-//Inician las ondas rest---- demo demo
+app.listen(PORT,()=>{
+    console.log('Servidor en ejecición en puertos '+PORT);
+})
+
+//Las rutas de la api rest
 
 app.get('/frutas',(req,res)=>{
 const myQuery = 'select * from frutas';
@@ -21,9 +25,7 @@ const myQuery = 'select * from frutas';
 });
 
 
-app.listen(PORT,()=>{
-    console.log('Servidor en ejecición en puertos '+PORT);
-})
+
 
 app.get('/',function(req,res){
      res.send('Aplicación iniciada todo bien siiii');
