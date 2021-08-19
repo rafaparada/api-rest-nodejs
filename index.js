@@ -66,7 +66,7 @@ app.put('/update',(req,res)=>{
             console.log(err);
             return err;
         }else{
-            res.json(result);
+            res.json({mensaje:'Cambios guardados'});
         }
     });
 
