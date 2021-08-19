@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8000;
 app.use(cors());
 
 app.listen(PORT,()=>{
-    console.log('Servidor en ejecición en puertos '+PORT);
+    console.log('Servidor en ejecución en puerto '+PORT);
 })
 
 //Las rutas de la api rest
@@ -23,9 +23,6 @@ const myQuery = 'select * from frutas';
        }
    });
 });
-
-
-
 
 app.get('/',function(req,res){
      res.send('Aplicación iniciada todo bien siiii');
